@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -8,7 +8,73 @@
 </head>
 
 <body>
-  <h1>Info de Contacto</h1>
+  <section>
+    <h1>Informacion de Contacto</h1>
+  </section>
+
+  <form action="index2.html" method="get">
+    <ul>
+      <li>
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="Nombre" placeholder="Ingrese su nombre" minlength="5" maxlength="10"
+          required>
+      </li>
+
+      <li>
+        <label for="mail">Correo Electronico</label>
+        <input type="email" id="mail" required>
+      </li>
+
+      <li>
+        <label for="text">Cedula</label>
+        <input type="text" id="text" name="text" pattern="[0-9]*" required>
+      </li>
+
+      <li>
+        <label for="number">PIN</label>
+        <input type="number" id="number" step="0.5">
+      </li>
+
+      <li>
+        <label for="color">Color</label>
+        <input type="color" id="color">
+      </li>
+
+      <li>
+        <label for="html">HTML</label>
+        <input type="checkbox" id="html">
+      </li>
+
+      <li>
+        <label for="java">Java Script</label>
+        <input type="checkbox" id="java">
+      </li>
+
+      <li>
+        <label for="css">CSS</label>
+        <input type="checkbox" id="css">
+      </li>
+
+      <li>
+        <label for="hombre">Hombre</label>
+        <input type="radio" name="genero" id="hombre">
+      </li>
+
+      <li>
+        <label for="mujer">Mujer</label>
+        <input type="radio" name="genero" id="mujer">
+      </li>
+
+      <li>
+        <label for="otro">Otro</label>
+        <input type="radio" name="genero" id="otro">
+      </li>
+
+      <li class="button">
+        <button type="submit">Enviar Datos</button>
+      </li>
+    </ul>
+  </form>
 </body>
 
 </html>
