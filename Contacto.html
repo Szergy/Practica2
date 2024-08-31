@@ -12,7 +12,7 @@
     <h1>Informacion de Contacto</h1>
   </section>
 
-  <form action="index2.html" method="get">
+  <form action="index2.html" method="get" enctype="multipart/form-data">
     <ul>
       <li>
         <label for="name">Nombre</label>
@@ -70,10 +70,37 @@
         <input type="radio" name="genero" id="otro">
       </li>
 
-      <li class="button">
-        <button type="submit">Enviar Datos</button>
+      <li>
+        <label for="Ciudades">Ciudades</label>
+        <select name="ciudades" id="ciudades">
+          <option value="ciudad">ciudad</option>
+          <option value="bucaramanga">bucaramanga</option>
+          <option value="medellin">medellin</option>
+          <option value="cucuta">cucuta</option>
+        </select>
       </li>
+
+      <li>
+        <input type="file" name="file" id="file" multiple>
+      </li>
+      
+      <div>
+        <br>
+        <br>
+        <input type="date">
+        <br>
+        <br>
+      </div>
+
+      <div>
+        <textarea name="campotexto" id="campotexto" rows="8" cols=""></textarea>
+      </div>
+
+      <div class="button">
+        <button type="submit">Enviar Datos</button>
+      </div>
     </ul>
+
   </form>
 </body>
 
